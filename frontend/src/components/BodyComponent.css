@@ -31,6 +31,8 @@
   }
 }
 
+
+
 .result-flex-container-2{
   width: 100%;
   max-width: 1600px;
@@ -229,3 +231,8 @@
   font-weight: 600;
 }
 
+@media (1400px <= width <= 1550px) {
+   .platform-text{
+    font-size: 13px;
+  }
+}
