@@ -1,6 +1,7 @@
 import {AdvancedImage} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
 import './BodyComponent.css';
+import { fill } from '@cloudinary/url-gen/actions/resize';
 
 function BodyComponent({games}){
   return (
@@ -20,7 +21,9 @@ function BodyComponent({games}){
                 }
               });
 
-              const gameImage = cloudinary.image(game.image_url_number);
+              const gameImage = cloudinary.image(game.image_url_number).resize(
+                fill().width(600).height(800)
+              );
               const platformImage = cloudinary.image(game.platform_image_number);
 
               return (

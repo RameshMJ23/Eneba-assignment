@@ -5,13 +5,21 @@
 
 .header-container{
   display: flex;
-  flex: 1;
+  width: 100%;
   flex-direction: row;
   height: 120px;
   align-items: center;
   background-color: rgb(70, 24, 172);
   border: none;
   max-width: 1500px;
+}
+
+@media (min-width: 1600px) {
+  .header-container {
+    width: 75vw;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 
 .logo{
@@ -30,32 +38,29 @@
   margin-left: 10px;
 }
 
-.profile-photo{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
 .profile-photo-container {
   width: 35px;
   height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 8px;
+  margin-left: 8px;
   flex-shrink: 0;
 }
 
 .profile-photo-container img {
-  width: 30px !important;
-  height: 30px !important;
+  width: 35px !important;
+  height: 35px !important;
 }
 
+.profile-photo{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
 
 .center-container{
   display: flex;
@@ -96,7 +101,7 @@ input::placeholder{
   flex: 1;
   justify-content: space-between;
   flex-direction: row;
-  margin: 0px 20px;
+  margin-left: 20px;
   min-width: 400px;
 }
 
@@ -113,4 +118,6 @@ input::placeholder{
   width: auto;
   align-items: center;
 }
+
+
 
