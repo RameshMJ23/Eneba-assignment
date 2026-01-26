@@ -27,7 +27,7 @@ function BodyComponent({games}){
               const platformImage = cloudinary.image(game.platform_image_number);
 
               return (
-                <div className="product-container" key={game.id}>
+                <div className="product-container" key={game.id} data-testid="test-product-container">
                   <div className="product-image-container">
                     <AdvancedImage className="product-image" cldImg={gameImage}/>
                     {game.cash_back && <div className="cashback-overlay">
@@ -75,12 +75,12 @@ function BodyComponent({games}){
                     </div>
                   </div>
 
-                  <div className="game-info-container">
+                  <div className="game-info-container" data-testid="test-game-info-container">
                     <div className="product-name">
                       {game.name}
                     </div>
 
-                    <div className={game.can_be_activated ? "game-location": "game-location-red"}>
+                    <div className={game.can_be_activated ? "game-location": "game-location-red"} data-testid="location">
                       {game.location}
                     </div>
 
