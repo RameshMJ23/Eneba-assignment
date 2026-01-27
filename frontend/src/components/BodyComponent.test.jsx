@@ -1,7 +1,6 @@
 import {describe, it, expect, beforeAll} from "vitest";
 import {render, screen, within} from "@testing-library/react";
 import BodyComponent from "./BodyComponent";
-import { color } from "@cloudinary/url-gen/qualifiers/background";
 
 describe('Body component', () => {
 

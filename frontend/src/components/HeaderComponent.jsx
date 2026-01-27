@@ -65,6 +65,7 @@ function HeaderComponent({setGames}){
             onChange={onSearchChange} 
             value={searchText} 
             onKeyDown={searchGame}
+            data-testid="searchbar"
           />
           <button className='close-icon-button' onClick={removeSearch}>
             <svg

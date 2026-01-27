@@ -5,8 +5,6 @@ import axios from 'axios';
 
 import HeaderComponent from "./HeaderComponent";
 
-
-
 describe("Header component", () => {
 
   let setGames;
